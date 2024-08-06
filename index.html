@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="switch">
+            <input type="checkbox" id="switch">
+            <label for="switch">
+                <button></button>
+            </label>
+        </div>
+    </div>
+
+    <script>
+        const switchInput = document.getElementById("switch");
+        const container = document.querySelector('.container');
+        
+        switchInput.addEventListener("change", () => {
+            container.classList.toggle('darkMode');
+        })
+    </script>
+</body>
+</html>
